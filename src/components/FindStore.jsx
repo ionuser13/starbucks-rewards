@@ -3,7 +3,7 @@ import React from 'react';
 const FindStore = () => {
     return (
         <div>
-            <FontAwesomeIcon icon="fa-solid fa-location-dot" />
+            <i class="fa-solid fa-location-dot"></i>
             <p>Find a store</p>
         </div>
     )

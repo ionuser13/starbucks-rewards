@@ -7,7 +7,7 @@ const StarLogo = () => {
         focusable="false"
         height="100%"
         viewBox="0 0 62 62"
-        width="100%"
+        width="31"
         xmlns="http://www.w3.org/2000/svg"
       >
         <circle cx="31" cy="31" fill="#fff" r="30.002"></circle>

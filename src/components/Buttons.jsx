@@ -3,8 +3,10 @@ import React from 'react';
 const ButtonsSection = () => {
     return (
         <div>
-            <button>Sign in</button>
-            <button>Join now</button>
+            <button className='button'>Sign in</button>
+            <button className='button join-now'>Join now</button>
         </div>
     )
 }
+
+export default ButtonsSection;
