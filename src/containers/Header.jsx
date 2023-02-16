@@ -7,13 +7,13 @@ import LowerHeader from '../components/LowerHeader';
 
 const Header = () => {
     return (
-        <header>
-            <div className='upperHeader'>
-                <div className='leftPart'>
-                    <StarLogo />
+        <header className='flex flex-col gap-[100px]'>
+            <div className='upperHeader flex flex-row justify-between align-center'>
+                <div className='leftPart flex items-center gap-x-10'>
+                    <StarLogo/>
                     <MenuOptions />
                 </div>
-                <div className='rightPart'>
+                <div className='rightPart flex items-center gap-x-12'>
                     <FindStore />
                     <ButtonsSection />
                 </div>
