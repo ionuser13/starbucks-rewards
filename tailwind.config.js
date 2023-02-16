@@ -14,6 +14,10 @@ module.exports = {
         'white': '#f1f8f6',
         'cream': '#f3f1e7',
         'black': '#000000',
+      },
+      backgroundImage: {
+        'mobile': 'url(https://www.starbucks.com/weblx/images/rewards/hero/hero-mobile_2021.jpg)',
+        'desktop': 'url(https://www.starbucks.com/weblx/images/rewards/hero/xl-hero-desktop_2021.png)',
       }
     },
   },
