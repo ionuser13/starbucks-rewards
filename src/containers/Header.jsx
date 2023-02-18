@@ -10,12 +10,12 @@ import "../styles/upperHeader.css";
 const Header = () => {
     return (
         <header className='flex flex-col'>
-            <div className='upperHeader flex flex-row align-center px-10'>
-                <div className='leftPart flex items-center gap-x-10'>
+            <div className='upperHeader flex flex-row align-center px-[4rem]'>
+                <div className='leftPart flex items-center gap-x-[4rem]'>
                     <StarLogo/>
                     <MenuOptions />
                 </div>
-                <div className='rightPart flex items-center ml-auto gap-x-12'>
+                <div className='rightPart flex items-center ml-auto gap-x-[4.8rem]'>
                     <FindStore />
                     <div className='flex gap-[16px] items-center'>
                         <SignButton innerText={"Sign In"}/>

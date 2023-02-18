@@ -3,7 +3,7 @@ import React from 'react';
 const MenuOptions = () => {
     return (
         <div>
-            <ul className='flex gap-x-6 tracking-widest uppercase font-bold py-10'>
+            <ul className='flex gap-x-[2.4rem] tracking-widest uppercase font-bold py-[4rem] text-sm'>
                 <li>
                     <a href="/" className='hover:text-green'>
                         Menu
