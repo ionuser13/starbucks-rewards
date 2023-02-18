@@ -4,7 +4,6 @@ import MenuOptions from '../components/MenuOptions';
 import FindStore from '../components/FindStore';
 import SignButton from '../components/SignButton';
 import JoinButton from '../components/JoinButton';
-import LowerHeader from '../components/LowerHeader';
 import "../styles/upperHeader.css";
 
 const Header = () => {
@@ -22,9 +21,6 @@ const Header = () => {
                         <JoinButton innerText={"Join now"}/>
                      </div>
                 </div>
-            </div>
-            <div className='stickyHeader'>
-                <LowerHeader />
             </div>
         </header>
     )
