@@ -3,7 +3,7 @@ import JoinButton from './JoinButton';
 
 const MainDesktopContent = () => {
     return (
-        <div className='w-full h-full flex flex-col justify-start items-center'>
+        <div className='flex flex-col justify-center items-start px-[3.2rem] py-[4rem]'>
             <h2 className='text-4xl font-semibold leading-tight'>FREE COFFEE <br /> IS A TAP AWAY </h2>
             <div>
                 <p className='text-[19px] mt-[1.6rem]'>Join now to start earning Rewards.</p>
@@ -11,9 +11,9 @@ const MainDesktopContent = () => {
                     <JoinButton innerText={"Join now"} bgColor={"#008248"} borColor={"#008248"}/>   
                 </div>
                 <div className='text-[1.9rem] mt-[1.6rem]'>
-                    <p>Or
-                        <a href='/'> join the app </a>
-                    for the best experience</p>
+                    <p>Or&nbsp;
+                        <a href='/' className='underline'>join the app</a>
+                    &nbsp;for the best experience</p>
                 </div>
             </div>
         </div>
