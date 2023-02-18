@@ -1,7 +1,7 @@
 import './App.css';
-import LowerHeader from './components/LowerHeader';
+import LowerHeader from './components/Header/LowerHeader';
 import Header from "./containers/Header";
-import MainDesktop from "./containers/MainDesktop"
+import MainDesktop from "./containers/JoinContainer/MainDesktop"
 
 function App() {
   return (
@@ -9,7 +9,6 @@ function App() {
       <Header />
       <LowerHeader />
       <section className='present'>
-        <MainDesktop />
         <MainDesktop />
       </section>
     </div>

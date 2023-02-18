@@ -1,5 +1,5 @@
 import React from 'react';
-import "../styles/lowerHeader.css"
+import "../../styles/lowerHeader.css"
 
 const LowerHeader = () => {
     return (

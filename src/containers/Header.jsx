@@ -1,9 +1,9 @@
 import React from 'react';
 import StarLogo from '../components/starLogo';
-import MenuOptions from '../components/MenuOptions';
-import FindStore from '../components/FindStore';
-import SignButton from '../components/SignButton';
-import JoinButton from '../components/JoinButton';
+import MenuOptions from '../components/Header/MenuOptions';
+import FindStore from '../components/Header/FindStore';
+import SignButton from '../components/Header/SignButton';
+import JoinButton from '../components/Header/JoinButton';
 import "../styles/upperHeader.css";
 
 const Header = () => {

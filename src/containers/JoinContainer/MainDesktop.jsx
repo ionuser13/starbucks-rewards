@@ -1,5 +1,5 @@
 import React from 'react';
-import MainDesktopContent from '../components/MainDesktopContent';
+import MainDesktopContent from '../../components/JoinSection/MainDesktopContent';
 
 const MainDesktop = () => {
     return (
@@ -10,4 +10,4 @@ const MainDesktop = () => {
     )
 }
 
-export default MainDesktop
+export default MainDesktop;

@@ -1,5 +1,5 @@
 import React from 'react';
-import JoinButton from './JoinButton';
+import JoinButton from '../Header/JoinButton';
 
 const MainDesktopContent = () => {
     return (
@@ -12,7 +12,7 @@ const MainDesktopContent = () => {
                 </div>
                 <div className='text-[1.9rem] mt-[1.6rem]'>
                     <p>Or&nbsp;
-                        <a href='/' className='underline'>join the app</a>
+                        <a href='/' className='underline hover:no-underline'>join the app</a>
                     &nbsp;for the best experience</p>
                 </div>
             </div>
