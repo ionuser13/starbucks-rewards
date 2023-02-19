@@ -5,7 +5,7 @@ import ExtrasTitle from '../../components/ExtrasSection/ExtrasTitle';
 const ExtrasContainer = () => {
     return (
         <div className='px-[4rem] mb-[128px]'>
-           <div className='w-full flex flex-col gap-[48px]'>
+           <div className='w-full flex flex-col items-center gap-[48px]'>
                 <ExtrasTitle />
                 <ExtrasBody />
            </div>
