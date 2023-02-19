@@ -1,6 +1,6 @@
 import React from 'react';
-import StartedTitle from '../../components/StartedSection/StartedTitle';
-import StartedBody from '../../components/StartedSection/StartedBody';
+import StartedTitle from '../../components/StartedComponents/StartedTitle';
+import StartedBody from '../../components/StartedComponents/StartedBody';
 
 const StartedSection = () => {
     return (

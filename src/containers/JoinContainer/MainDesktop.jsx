@@ -1,5 +1,5 @@
 import React from 'react';
-import MainDesktopContent from '../../components/JoinSection/MainDesktopContent';
+import MainDesktopContent from '../../components/JoinComponents/MainDesktopContent';
 
 const MainDesktop = () => {
     return (
