@@ -4,7 +4,7 @@ import StartedBody from '../../components/StartedSection/StartedBody';
 
 const StartedSection = () => {
     return (
-        <div className='startedSection flex flex-col gap-[48px] px-[48px] mb-[128px]'>
+        <div className='startedSection flex flex-col items-center gap-[48px] px-[48px] mb-[128px]'>
             <StartedTitle />
             <StartedBody />
         </div>
