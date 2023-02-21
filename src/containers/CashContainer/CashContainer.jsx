@@ -5,7 +5,7 @@ import CashBodyTwo from '../../components/CashComponents/CashBodyTwo';
 
 const CashContainer = () => {
     return (
-        <div className='bg-cream p-[4.8rem]'>
+        <div className='bg-cream p-[4.8rem] mb-[128px]'>
             <CashTitle />
             <CashBodyOne />
             <hr className='pb-[4.8rem] pt-[2.4rem]'/>

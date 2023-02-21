@@ -15,7 +15,7 @@ const CashBodyOne = () => {
                         </div>
                         <div>
                             <p className='text-[19px] font-semibold'>Scan and pay separately</p>
-                            <p>Use cash or credit/debit card at the register.</p>
+                            <p className='pt-[16px]'>Use cash or credit/debit card at the register.</p>
                         </div>
                     </div>
                 </div>
@@ -26,7 +26,7 @@ const CashBodyOne = () => {
                         </div>
                         <div>
                             <p className='text-[19px] font-semibold'>Save payment in the app</p>
-                            <p>Check-out faster by saving a credit/debit card or PayPal to your account. You’ll be able to order ahead or scan and pay at the register in one step.</p>
+                            <p className='pt-[16px]'>Check-out faster by saving a credit/debit card or PayPal to your account. You&#8217;ll be able to order ahead or scan and pay at the register in one step.</p>
                         </div>
                     </div>
                 </div>

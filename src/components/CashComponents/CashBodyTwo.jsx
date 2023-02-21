@@ -15,7 +15,7 @@ const CashBodyTwo = () => {
                         </div>
                         <div>
                             <p className='text-[19px] font-semibold'>Preload</p>
-                            <p>To save time and earn Stars twice as fast, add money to your digital Starbucks Card using any payment option. Scan and pay in one step or order ahead in the app.</p>
+                            <p className='pt-[16px]'>To save time and earn Stars twice as fast, add money to your digital Starbucks Card using any payment option. Scan and pay in one step or order ahead in the app.</p>
                         </div>
                     </div>
                 </div>
@@ -26,7 +26,7 @@ const CashBodyTwo = () => {
                         </div>
                         <div>
                             <p className='text-[19px] font-semibold'>Register your gift card</p>
-                            <p>Then use it to pay through the app. You can even consolidate balances from multiple cards in one place.</p>
+                            <p className='pt-[16px]'>Then use it to pay through the app. You can even consolidate balances from multiple cards in one place.</p>
                         </div>
                     </div>
                 </div>
