@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CashBody = () => {
+const CashBodyOne = () => {
     return (
         <div className='supremeCashContainer text-[16px] text-left'>
             <div className='OneDollar block'>
@@ -8,7 +8,7 @@ const CashBody = () => {
                     <p className='font-semibold text-[24px]'>1 <span aria-hidden="true" class="color-black text-sm">★</span> per dollar</p>
                     <p>Pay as you go</p>
                 </div>
-                <div className='inline-block w-[41.66667%] relative text-left align-top'>
+                <div className='inline-block w-[33.33%] relative text-left align-top px-[24px]'>
                     <div className='flex gap-[16px] scan'>
                         <div className='flex max-w-[128px] shrink-0 relative text-left align-top'>
                             <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/1A.png" alt="Scan and pay separately" className='w-full h-auto' width={112}/>
@@ -19,7 +19,7 @@ const CashBody = () => {
                         </div>
                     </div>
                 </div>
-                <div className='inline-block w-[41.66667%] relative text-left align-top'>
+                <div className='inline-block w-[33.33%] relative text-left align-top px-[24px]'>
                     <div className='save flex gap-[16px]'>
                         <div className='flex max-w-[128px] shrink-0'>
                             <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/1B.png" alt="Save payment in the app" className='w-full h-auto' width={112} />
@@ -31,9 +31,8 @@ const CashBody = () => {
                     </div>
                 </div>
             </div>
-            <div className='TwoDollars'></div>
         </div>
     )
 }
 
-export default CashBody;
+export default CashBodyOne;
