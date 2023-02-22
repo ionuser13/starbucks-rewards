@@ -4,6 +4,7 @@ import Header from "./containers/Header";
 import MainDesktop from "./containers/JoinContainer/MainDesktop";
 import StartedSection from './containers/StartedContainer/StartedSection';
 import CashContainer from './containers/CashContainer/CashContainer';
+import StarCodesContainer from './containers/StarCodesContainer/StarCodesContainer';
 import './App.css';
 
 
@@ -18,6 +19,7 @@ function App() {
         <StartedSection />
         <ExtrasContainer />
         <CashContainer />
+        <StarCodesContainer />
       </section>
     </div>
   );

@@ -14,7 +14,7 @@ const CashBodyOne = () => {
                             <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/1A.png" alt="Scan and pay separately" className='w-full h-auto' width={112}/>
                         </div>
                         <div>
-                            <p className='text-[19px] font-semibold'>Scan and pay separately</p>
+                            <h3 className='text-[19px] font-semibold'>Scan and pay separately</h3>
                             <p className='pt-[16px]'>Use cash or credit/debit card at the register.</p>
                         </div>
                     </div>
@@ -25,7 +25,7 @@ const CashBodyOne = () => {
                             <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/1B.png" alt="Save payment in the app" className='w-full h-auto' width={112} />
                         </div>
                         <div>
-                            <p className='text-[19px] font-semibold'>Save payment in the app</p>
+                            <h3 className='text-[19px] font-semibold'>Save payment in the app</h3>
                             <p className='pt-[16px]'>Check-out faster by saving a credit/debit card or PayPal to your account. You&#8217;ll be able to order ahead or scan and pay at the register in one step.</p>
                         </div>
                     </div>

@@ -14,7 +14,7 @@ const CashBodyTwo = () => {
                             <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/2A.png" alt="Preload" className='w-full h-auto' width={112}/>
                         </div>
                         <div>
-                            <p className='text-[19px] font-semibold'>Preload</p>
+                            <h3 className='text-[19px] font-semibold'>Preload</h3>
                             <p className='pt-[16px]'>To save time and earn Stars twice as fast, add money to your digital Starbucks Card using any payment option. Scan and pay in one step or order ahead in the app.</p>
                         </div>
                     </div>
@@ -25,7 +25,7 @@ const CashBodyTwo = () => {
                             <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/2B.png" alt="Register your gift card" className='w-full h-auto' width={112} />
                         </div>
                         <div>
-                            <p className='text-[19px] font-semibold'>Register your gift card</p>
+                            <h3 className='text-[19px] font-semibold'>Register your gift card</h3>
                             <p className='pt-[16px]'>Then use it to pay through the app. You can even consolidate balances from multiple cards in one place.</p>
                         </div>
                     </div>
