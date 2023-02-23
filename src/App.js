@@ -6,6 +6,7 @@ import StartedSection from './containers/StartedContainer/StartedSection';
 import CashContainer from './containers/CashContainer/CashContainer';
 import QuestionContainer from './containers/QuestionsContainer/QuestionContainer';
 import './App.css';
+import StarTermsContainer from './containers/StarTermsContainer/StarTermsContainer';
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <ExtrasContainer />
         <CashContainer />
         <QuestionContainer />
+        <StarTermsContainer />
       </section>
     </div>
   );
