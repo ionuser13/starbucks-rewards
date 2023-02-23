@@ -1,5 +1,5 @@
 import React from 'react';
-import StarLogo from '../components/starLogo';
+import StarLogo from '../components/Icons/starLogo';
 import MenuOptions from '../components/Header/MenuOptions';
 import FindStore from '../components/Header/FindStore';
 import SignButton from '../components/Header/SignButton';

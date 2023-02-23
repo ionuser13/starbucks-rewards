@@ -1,5 +1,5 @@
 import React from 'react';
-import WindowLogo from '../WindowLogo';
+import WindowLogo from '../Icons/WindowLogo';
 
 const TermsOfUse = () => {
     return (

@@ -9,12 +9,16 @@ const StarTermsContainer = () => {
     return (
         <div className='mb-[4.8rem]'>
             <div className='bg-[#f9f9f9]'>
-                <div className='px-[4rem] py-[4.8rem] max-w-[1440px] mx-auto block text-left'>
-                    <Restrictions />
-                    <EarningStars />
-                    <TermsOfUse />
-                    <Benefits />
-                    <ReedemingRewards />
+                <div className='max-w-[1440px] px-[4rem] mx-auto'>
+                    <div>
+                        <div className='py-[4.8rem] max-w-[1440px] mx-auto block text-left'>
+                            <Restrictions />
+                            <EarningStars />
+                            <TermsOfUse />
+                            <Benefits />
+                            <ReedemingRewards />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
