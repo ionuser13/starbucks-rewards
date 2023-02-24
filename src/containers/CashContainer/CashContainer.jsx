@@ -8,7 +8,7 @@ const CashContainer = () => {
         <div className='bg-cream p-[4.8rem] mb-[128px]'>
             <CashTitle />
             <CashBodyOne />
-            <hr className='pb-[4.8rem] pt-[2.4rem]'/>
+            <hr className='mb-[4.8rem] mt-[2.4rem]'/>
             <CashBodyTwo />
         </div>
     )
