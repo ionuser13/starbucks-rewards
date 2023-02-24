@@ -2,10 +2,11 @@ import React from 'react';
 import SocialsFooter from '../components/FooterComponents/SocialsFooter';
 import FooterLink from "../components/FooterComponents/FooterLink";
 import FooterTitle from '../components/FooterComponents/FooterTitle';
+import FooterLinkBottom from '../components/FooterComponents/FooterLinkBottom';
 
 const Footer = () => {
     return (
-        <div className='text-left'>
+        <div className='text-left text-[1.6rem]'>
             <footer style={{"box-shadow": "0 -1px 3px rgb(0 0 0 / 10%), 0 -2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%)"}} className="pt-[4.8rem] pb-[14.6rem] bg-[#fff]">
                 <nav className='ml-[12px] px-[4rem]'>
                     <div className='flex'>
@@ -109,6 +110,16 @@ const Footer = () => {
                     </div>
                     <hr aria-hidden="true" class="my-[3.2rem]"></hr>
                     <SocialsFooter />
+                    <ul className='inline-block mb-[0.4rem] mt-[1.6rem] flex'>
+                        <li className="items-center flex text-center">
+                            <a href="https://www.starbucks.com/terms/privacy-policy/" className='block no-underline mb-[0.4rem] py-[0.8rem] lg:mb-0 lg:py-[0] lg:pr-[1.6rem] hover:underline'>Privacy Notice</a>
+                        </li>
+                        <FooterLinkBottom link={"https://www.starbucks.com/terms/starbucks-terms-of-use/"} content={"Terms of Use"}/>
+                        <FooterLinkBottom link={"https://www.starbucks.com/personal-information"} content={"Do Not Share My Personal Information"}/>
+                        <FooterLinkBottom link={"https://globalassets.starbucks.com/assets/A2A072E3411C4A6ABAEB8D6BCF286F43.pdf"} content={"CA Supply Chain Act"}/>
+                        <FooterLinkBottom link={"/"} content={"Cookie Preferences"}/>
+                    </ul>
+                    <p className='md:text-[1.4rem] text-[1.3rem] py-[1.6rem] text-[#00000094]'>© 2023 Starbucks Coffee Company. All rights reserved.</p>
                 </nav>
             </footer>
         </div>
