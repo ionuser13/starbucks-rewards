@@ -1,5 +1,5 @@
 import React from 'react';
-import WindowLogo from '../../components/Icons/WindowLogo';
+import WindowLogo from '../../Assets/Icons/WindowLogo';
 
 const QuestionContainer = () => {
     return (

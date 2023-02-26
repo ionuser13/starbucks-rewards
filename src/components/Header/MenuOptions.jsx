@@ -2,7 +2,7 @@ import React from 'react';
 
 const MenuOptions = () => {
     return (
-        <div>
+        <div className='shrink-0'>
             <ul className='flex gap-x-[2.4rem] tracking-widest uppercase font-bold py-[4rem] text-sm'>
                 <li>
                     <a href="/" className='hover:text-green'>

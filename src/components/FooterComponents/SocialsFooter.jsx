@@ -1,10 +1,10 @@
 import React from 'react';
-import Spotify from '../Icons/Spotify';
-import Facebook from '../Icons/Facebook';
-import Pinterest from '../Icons/Pinterest';
-import Instagram from '../Icons/Instagram';
-import Youtube from '../Icons/Youtube';
-import Twitter from '../Icons/Twitter';
+import Spotify from '../../Assets/Icons/Spotify';
+import Facebook from '../../Assets/Icons/Facebook';
+import Pinterest from '../../Assets/Icons/Pinterest';
+import Instagram from '../../Assets/Icons/Instagram';
+import Youtube from '../../Assets/Icons/Youtube';
+import Twitter from '../../Assets/Icons/Twitter';
 
 const SocialsFooter = () => {
     return (
