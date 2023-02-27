@@ -8,6 +8,7 @@ import QuestionContainer from './containers/QuestionsContainer/QuestionContainer
 import './App.css';
 import StarTermsContainer from './containers/StarTermsContainer/StarTermsContainer';
 import Footer from "./containers/Footer.jsx"
+import MainMobile from './containers/JoinContainer/MainMobile';
 
 
 
@@ -17,7 +18,10 @@ function App() {
       <Header />
       <LowerHeader />
       <section className='present'>
-        <MainDesktop />
+        <div className='mb-[72px] md:mb-[128px]'>
+          <MainDesktop />
+          <MainMobile />
+        </div>
         <StartedSection />
         <ExtrasContainer />
         <CashContainer />

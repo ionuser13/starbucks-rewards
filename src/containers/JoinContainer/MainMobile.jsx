@@ -1,9 +1,13 @@
 import React from 'react';
+import MainMobileContent from '../../components/JoinComponents/MainMobileContent';
 
 const MainMobile = () => {
     return(
-        <div className='bg-mobile bg-light-green bg-[50%] bg-[length:auto_100%] bg-no-repeat w-full h-[610px]'>
-            
+        <div className='flex bg-mobile bg-light-green bg-cover bg-no-repeat md:hidden'>
+            <div className="flex w-full">
+                <div className='pb-[133.33%] float-left w-0'></div>
+                <MainMobileContent />
+            </div>
         </div>
     )
 }
