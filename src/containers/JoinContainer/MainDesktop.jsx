@@ -4,9 +4,11 @@ import MainDesktopContent from '../../components/JoinComponents/MainDesktopConte
 const MainDesktop = () => {
     return (
         <div className='bg-desktop bg-light-green bg-[50%] bg-cover md:bg-[length:auto_100%] bg-no-repeat w-full flex text-left mb-[128px]'>
-            <div>
-                <div className='pb-[56.25%]'></div>
-                <MainDesktopContent />
+            <div className='mx-auto px-0 w-full md:px-[2.4rem] lg:px-[4rem] box-content max-w-[1440px]'>
+                <div className='flex box-border'>
+                    <div className='pb-[56.25%] float-left w-0'></div>
+                    <MainDesktopContent />
+                </div>
             </div>
         </div>
     )
