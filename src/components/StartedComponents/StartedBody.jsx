@@ -3,7 +3,16 @@ import React from 'react';
 const StartedBody = () => {
     return (
         <div className='flex flex-col pt-[48px] md:flex-row md:my-0 md:mx-[5vw]'>
-            <div className='step1 flex md:flex-col pb-[3.2rem] w-[full] md:pb-0 md:mr-[2.4rem] md:w-[33.33%]'>
+            <div className='step1-mobile md:hidden flex md:flex-col pb-[3.2rem] w-[full] md:pb-0 md:mr-[2.4rem] md:w-[33.33%]'>
+                <div className='img-container text-center shrink-0 pb-[2.4rem] max-w-[128px] my-0 pr-[1.6rem]'>
+                    <img src="https://www.starbucks.com/weblx/images/rewards/getting-started/getting-started-1@2x.jpg" alt="step one to get started on Starbucks Rewards" className='w-[48px]'/>
+                </div>
+                <div className='text-container text-left md:text-center min-w-[calc(100%-128px)]'>
+                    <h3 className='text-[1.6rem] md:text-[1.9rem] font-semibold'>Download the Starbucks® app</h3>
+                    <p className='text-[16px] pt-[1.6rem]' ><a href='/' className='text-green underline hover:no-underline'>Join in the app</a> to get access to the full range of Starbucks® Rewards benefits.</p>    
+                </div> 
+            </div>
+            <div className='step1 hidden md:flex md:flex-col pb-[3.2rem] w-[full] md:pb-0 md:mr-[2.4rem] md:w-[33.33%]'>
                 <div className='img-container text-center shrink-0 pb-[2.4rem] max-w-[128px] my-0 mx-auto pr-[1.6rem] md:px-0'>
                     <img src="https://www.starbucks.com/weblx/images/rewards/getting-started/getting-started-1@2x.jpg" alt="step one to get started on Starbucks Rewards" className='w-[48px]'/>
                 </div>
