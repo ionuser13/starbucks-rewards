@@ -7,10 +7,10 @@ import FooterLinkBottom from '../components/FooterComponents/FooterLinkBottom';
 const Footer = () => {
     return (
         <div className='text-left text-[1.6rem]'>
-            <footer style={{"box-shadow": "0 -1px 3px rgb(0 0 0 / 10%), 0 -2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%)"}} className="pt-[4.8rem] pb-[14.6rem] bg-[#fff]">
-                <nav className='ml-[12px] px-[4rem]'>
+            <footer style={{"box-shadow": "0 -1px 3px rgb(0 0 0 / 10%), 0 -2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%)"}} className="bg-[#fff] pb-[14.6rem] py-[3.2rem] lg:pt-[4.8rem]">
+                <nav className='px-[1.6rem] md:px-[2.4rem] lg:px-[4rem] min-[1520px]:mx-auto min-[1520px]:px-0 min-[1520px]:max-w-[1440px]'>
                     <div className='flex'>
-                        <div className='w-[190px] max-w-[190px] inline-block'>
+                        <div className='hidden w-[190px] max-w-[190px] lg:inline-block'>
                             <FooterTitle title={"About Us"}/>
                             <ul className='inline-block'>
                                 <li>
@@ -33,7 +33,7 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div className='w-[190px] max-w-[190px] inline-block ml-[3.2rem]'>
+                        <div className='hidden w-[190px] max-w-[190px] lg:inline-block lg:ml-[3.2rem]'>
                             <FooterTitle title={"Careers"}/>
                             <ul className='inline-block'>
                                 <li>
@@ -56,7 +56,7 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div className='w-[190px] max-w-[190px] inline-block ml-[3.2rem]'>
+                        <div className='hidden w-[190px] max-w-[190px] lg:inline-block lg:ml-[3.2rem]'>
                             <FooterTitle title={"Social Impact"}/>
                             <ul className='inline-block'>
                                 <li>
@@ -70,7 +70,7 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div className='w-[190px] max-w-[190px] inline-block ml-[3.2rem]'>
+                        <div className='hidden w-[190px] max-w-[190px] lg:inline-block lg:ml-[3.2rem]'>
                             <FooterTitle title={"For Business Partners"}/>
                             <ul className='inline-block'>
                                 <li>
@@ -87,7 +87,7 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div className='w-[190px] max-w-[190px] inline-block ml-[3.2rem]'>
+                        <div className='hidden w-[190px] max-w-[190px] lg:inline-block lg:ml-[3.2rem]'>
                             <FooterTitle title={"Order and Pickup"}/>
                             <ul className='inline-block'>
                                 <li>
@@ -110,8 +110,8 @@ const Footer = () => {
                     </div>
                     <hr aria-hidden="true" class="my-[3.2rem]"></hr>
                     <SocialsFooter />
-                    <ul className='inline-block mb-[0.4rem] mt-[1.6rem] flex'>
-                        <li className="items-center flex text-center">
+                    <ul className='inline-block mt-[1.6rem] lg:mb-[0.4rem] lg:flex'>
+                        <li className="items-center lg:flex lg:text-center">
                             <a href="https://www.starbucks.com/terms/privacy-policy/" className='block no-underline mb-[0.4rem] py-[0.8rem] lg:mb-0 lg:py-[0] lg:pr-[1.6rem] hover:underline'>Privacy Notice</a>
                         </li>
                         <FooterLinkBottom link={"https://www.starbucks.com/terms/starbucks-terms-of-use/"} content={"Terms of Use"}/>
