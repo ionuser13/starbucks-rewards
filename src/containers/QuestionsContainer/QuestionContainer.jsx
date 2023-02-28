@@ -3,7 +3,7 @@ import WindowLogo from '../../Assets/Icons/WindowLogo';
 
 const QuestionContainer = () => {
     return (
-        <div className='mb-[72px] md:mb-[128px]'>
+        <div className='text-left mb-[72px] md:mb-[128px]'>
             <div className='mx-auto py-[4.8rem] px-[1.6rem] max-w-[1440px] md:px-[2.4rem] lg:px-[4rem] min-[1520px]:px-0'>
                 <div>
                     <div className='md:w-[50%] md:ml-[16.67%]'>
