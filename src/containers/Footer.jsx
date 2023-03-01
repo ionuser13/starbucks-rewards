@@ -8,8 +8,11 @@ import Arrow from "../Assets/Icons/Arrow";
 
 const Footer = () => {
   const [toggleState, setToggleState] = useState({
-    About1: false,
-    About2: false,
+    AboutUs: false,
+    Careers: false,
+    SocialImpact: false,
+    ForBusinessPartners: false,
+    OrderAndPickup: false,
   })
   const handleToggle = (item, action) => {
      setToggleState((prevState) =>{
@@ -37,7 +40,7 @@ const Footer = () => {
           <div className="block lg:flex">
             <div className="w-full lg:hidden">
               <div
-                onClick={() => handleToggle("About1", "switch")}
+                onClick={() => handleToggle("AboutUs", "switch")}
                 className="clickable cursor-pointer flex items-center justify-between mb-[0.8rem] min-[480px]:mb-[1.6rem] py-[0.8rem]"
               >
                 <h2 tabindex="-1" className="text-[1.6rem]">
@@ -45,24 +48,7 @@ const Footer = () => {
                 </h2>
                 <button
                   aria-label="Expand About Us"
-                  aria-expanded = {toggleState.About1}
-                  className={`button cursor-pointer bg-transparent border-0 rounded-none p-0 relative transition-button min-w-[44px] min-h-[44px]`}
-                >
-                  <Arrow />
-                </button>
-              </div>
-            </div>
-            <div className="w-full lg:hidden">
-              <div
-                className="clickable cursor-pointer flex items-center justify-between mb-[0.8rem] min-[480px]:mb-[1.6rem] py-[0.8rem]"
-                onClick={() => handleToggle("About2", "switch")}
-              >
-                <h2 tabindex="-1" className="text-[1.6rem]">
-                  About Us
-                </h2>
-                <button
-                  aria-label="Expand About Us"
-                  aria-expanded = {toggleState.About2}
+                  aria-expanded = {toggleState.AboutUs}
                   className={`button cursor-pointer bg-transparent border-0 rounded-none p-0 relative transition-button min-w-[44px] min-h-[44px]`}
                 >
                   <Arrow />
@@ -109,6 +95,23 @@ const Footer = () => {
                   />
                 </li>
               </ul>
+            </div>
+            <div className="w-full lg:hidden">
+              <div
+                className="clickable cursor-pointer flex items-center justify-between mb-[0.8rem] min-[480px]:mb-[1.6rem] py-[0.8rem]"
+                onClick={() => handleToggle("Careers", "switch")}
+              >
+                <h2 tabindex="-1" className="text-[1.6rem]">
+                    Careers
+                </h2>
+                <button
+                  aria-label="Expand Careers"
+                  aria-expanded = {toggleState.Careers}
+                  className={`button cursor-pointer bg-transparent border-0 rounded-none p-0 relative transition-button min-w-[44px] min-h-[44px]`}
+                >
+                  <Arrow />
+                </button>
+              </div>
             </div>
             <div className="hidden w-[190px] max-w-[190px] lg:inline-block lg:ml-[3.2rem]">
               <FooterTitle title={"Careers"} />
@@ -159,6 +162,23 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
+            <div className="w-full lg:hidden">
+              <div
+                className="clickable cursor-pointer flex items-center justify-between mb-[0.8rem] min-[480px]:mb-[1.6rem] py-[0.8rem]"
+                onClick={() => handleToggle("SocialImpact", "switch")}
+              >
+                <h2 tabindex="-1" className="text-[1.6rem]">
+                    Social Impact
+                </h2>
+                <button
+                  aria-label="Expand Social Impact"
+                  aria-expanded = {toggleState.SocialImpact}
+                  className={`button cursor-pointer bg-transparent border-0 rounded-none p-0 relative transition-button min-w-[44px] min-h-[44px]`}
+                >
+                  <Arrow />
+                </button>
+              </div>
+            </div>
             <div className="hidden w-[190px] max-w-[190px] lg:inline-block lg:ml-[3.2rem]">
               <FooterTitle title={"Social Impact"} />
               <ul className="inline-block">
@@ -183,6 +203,23 @@ const Footer = () => {
                   />
                 </li>
               </ul>
+            </div>
+            <div className="w-full lg:hidden">
+              <div
+                className="clickable cursor-pointer flex items-center justify-between mb-[0.8rem] min-[480px]:mb-[1.6rem] py-[0.8rem]"
+                onClick={() => handleToggle("ForBusinessPartners", "switch")}
+              >
+                <h2 tabindex="-1" className="text-[1.6rem]">
+                    For Business Partners
+                </h2>
+                <button
+                  aria-label="Expand For Business Partners"
+                  aria-expanded = {toggleState.ForBusinessPartners}
+                  className={`button cursor-pointer bg-transparent border-0 rounded-none p-0 relative transition-button min-w-[44px] min-h-[44px]`}
+                >
+                  <Arrow />
+                </button>
+              </div>
             </div>
             <div className="hidden w-[190px] max-w-[190px] lg:inline-block lg:ml-[3.2rem]">
               <FooterTitle title={"For Business Partners"} />
@@ -214,6 +251,23 @@ const Footer = () => {
                   />
                 </li>
               </ul>
+            </div>
+            <div className="w-full lg:hidden">
+              <div
+                className="clickable cursor-pointer flex items-center justify-between mb-[0.8rem] min-[480px]:mb-[1.6rem] py-[0.8rem]"
+                onClick={() => handleToggle("OrderAndPickup", "switch")}
+              >
+                <h2 tabindex="-1" className="text-[1.6rem]">
+                    Order and Pickup
+                </h2>
+                <button
+                  aria-label="Expand Order And Pickup"
+                  aria-expanded = {toggleState.OrderAndPickup}
+                  className={`button cursor-pointer bg-transparent border-0 rounded-none p-0 relative transition-button min-w-[44px] min-h-[44px]`}
+                >
+                  <Arrow />
+                </button>
+              </div>
             </div>
             <div className="hidden w-[190px] max-w-[190px] lg:inline-block lg:ml-[3.2rem]">
               <FooterTitle title={"Order and Pickup"} />
