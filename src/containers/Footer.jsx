@@ -3,6 +3,7 @@ import SocialsFooter from '../components/FooterComponents/SocialsFooter';
 import FooterLink from "../components/FooterComponents/FooterLink";
 import FooterTitle from '../components/FooterComponents/FooterTitle';
 import FooterLinkBottom from '../components/FooterComponents/FooterLinkBottom';
+import Arrow from '../Assets/Icons/Arrow';
 
 const Footer = () => {
     return (
@@ -10,6 +11,14 @@ const Footer = () => {
             <footer style={{"box-shadow": "0 -1px 3px rgb(0 0 0 / 10%), 0 -2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%)"}} className="bg-[#fff] pb-[14.6rem] py-[3.2rem] lg:pt-[4.8rem]">
                 <nav className='px-[1.6rem] md:px-[2.4rem] lg:px-[4rem] min-[1520px]:mx-auto min-[1520px]:px-0 min-[1520px]:max-w-[1440px]'>
                     <div className='flex'>
+                        <div className='w-full lg:hidden'>
+                            <div className='cursor-pointer flex items-center justify-between mb-[0.8rem] min-[480px]:mb-[1.6rem] py-[0.8rem]'>
+                                <FooterTitle title={"About Us"}/>
+                                <button className='cursor-pointer bg-transparent border-0 rounded-none p-0 relative transition-button'>
+                                    <Arrow />
+                                </button>
+                            </div>
+                        </div>
                         <div className='hidden w-[190px] max-w-[190px] lg:inline-block'>
                             <FooterTitle title={"About Us"}/>
                             <ul className='inline-block'>
