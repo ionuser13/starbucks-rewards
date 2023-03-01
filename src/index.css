@@ -33,15 +33,15 @@ code {
 }
 
 .expander {
-
+  transition: height .3s cubic-bezier(.25, .46, .45, .94);
 }
 .expander-overflow {
-
+  overflow: hidden;
 }
 .transition-button {
   transition: all .2s ease-out;
 }
-.button-rotation {
+.button[aria-expanded="true"] {
   transform: rotate(180deg);
 }
 
