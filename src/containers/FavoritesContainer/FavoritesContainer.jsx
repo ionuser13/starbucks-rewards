@@ -21,7 +21,7 @@ const FavoritesContainer = () => {
                 <div>
                     <div className='buttons flex justify-around mx-auto relative w-full md:max-w-[540px]'>
                         {products.map((product) => (
-                            <button key={product.points} className={`bg-transparent items-center grow pt-[0.8rem] pb-[1.6rem] px-[0.8rem] relative w-full ${selectedButton === product.points ? 'active' : ''}`} role={"tab"} tabIndex="-1" onClick={() => setSelectedButton(product.points)}>
+                            <button key={product.points} className={`bg-transparent items-center grow pt-[0.8rem] pb-[1.6rem] px-[0.8rem] relative w-full ${selectedButton === product.points ? 'border-b-4 border-green' : ''}`} role={"tab"} tabIndex="-1" onClick={() => setSelectedButton(product.points)}>
                                 <span className='grow text-[1.9rem] md:text-[2.4rem] font-semibold'>
                                     {product.points}
                                     <span className='text-star'>★</span>
