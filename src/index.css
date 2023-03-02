@@ -27,6 +27,11 @@ code {
     monospace;
 }
 
+
+.product-transition {
+  transition: all .3 ease-out;
+}
+
 .fading {
   opacity: 1;
   transition: opacity .3s ease-in;

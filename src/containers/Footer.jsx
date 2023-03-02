@@ -531,7 +531,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <hr aria-hidden="true" class="my-[3.2rem]"></hr>
+          <hr aria-hidden="true" className="my-[3.2rem]"></hr>
           <SocialsFooter />
           <ul className="inline-block mt-[1.6rem] lg:mb-[0.4rem] lg:flex">
             <li className="items-center lg:flex lg:text-center">
