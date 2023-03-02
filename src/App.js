@@ -5,10 +5,11 @@ import MainDesktop from "./containers/JoinContainer/MainDesktop";
 import StartedSection from './containers/StartedContainer/StartedSection';
 import CashContainer from './containers/CashContainer/CashContainer';
 import QuestionContainer from './containers/QuestionsContainer/QuestionContainer';
-import './App.css';
 import StarTermsContainer from './containers/StarTermsContainer/StarTermsContainer';
 import Footer from "./containers/Footer.jsx"
 import MainMobile from './containers/JoinContainer/MainMobile';
+import FavoritesContainer from './containers/FavoritesContainer/FavoritesContainer';
+import './App.css';
 
 
 
@@ -23,6 +24,7 @@ function App() {
           <MainMobile />
         </div>
         <StartedSection />
+        <FavoritesContainer />
         <ExtrasContainer />
         <CashContainer />
         <QuestionContainer />

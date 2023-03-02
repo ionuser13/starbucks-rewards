@@ -99,6 +99,7 @@ module.exports = {
             DEFAULT: '#008248'
         },
         'light-green': '#d4e9e2',
+        'light-green-op': "#d4e9e254",
         'white': '#f1f8f6',
         'cream': '#f3f1e7',
         'black': '#000000',
