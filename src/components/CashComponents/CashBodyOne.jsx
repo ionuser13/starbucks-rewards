@@ -4,7 +4,7 @@ const CashBodyOne = () => {
     return (
         <div className='OneDollar block m-0 p-0 text-[16px] text-left'>
             <div className='inline-block m-0 pb-[3.2rem] relative text-left align-top w-full lg:p-0 lg:w-[16.667%]'>
-                <p className='font-semibold text-[1.9rem] md:text-[2.4rem]'>1 <span aria-hidden="true" class="color-black text-sm">★</span> per dollar</p>
+                <p className='font-semibold text-[1.9rem] md:text-[2.4rem]'>1 <span aria-hidden="true" className="text-black text-sm">★</span> per dollar</p>
                 <p>Pay as you go</p>
             </div>
             <div className='inline-block m-0 pb-[3.2rem] relative text-left align-top w-full md:p-0 md:w-[50%] lg:w-[41.667%] xl:w-[33.33%]'>

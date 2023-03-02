@@ -5,7 +5,6 @@ import FooterTitle from "../components/FooterComponents/FooterTitle";
 import FooterLinkBottom from "../components/FooterComponents/FooterLinkBottom";
 import Arrow from "../Assets/Icons/Arrow";
 
-
 const Footer = () => {
   const [toggleState, setToggleState] = useState({
     AboutUs: false,
@@ -13,25 +12,21 @@ const Footer = () => {
     SocialImpact: false,
     ForBusinessPartners: false,
     OrderAndPickup: false,
-  })
+  });
   const handleToggle = (item, action) => {
-     setToggleState((prevState) =>{
-         return {
-             ...prevState,
-             [item]: action === "switch"
-             ? !toggleState[item]
-             : toggleState[item]
-             
-        }
-     })
-  }
+    setToggleState((prevState) => {
+      return {
+        ...prevState,
+        [item]: action === "switch" ? !toggleState[item] : toggleState[item],
+      };
+    });
+  };
 
-    
   return (
     <div className="text-left text-[1.6rem]">
       <footer
         style={{
-          "box-shadow":
+          boxShadow:
             "0 -1px 3px rgb(0 0 0 / 10%), 0 -2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%)",
         }}
         className="bg-[#fff] pb-[14.6rem] py-[3.2rem] lg:pt-[4.8rem]"
@@ -43,19 +38,25 @@ const Footer = () => {
                 onClick={() => handleToggle("AboutUs", "switch")}
                 className="cursor-pointer flex items-center justify-between mb-[0.8rem] min-[480px]:mb-[1.6rem] py-[0.8rem]"
               >
-                <h2 tabindex="-1" className="text-[1.6rem]">
+                <h2 tabIndex="-1" className="text-[1.6rem]">
                   About Us
                 </h2>
                 <button
                   aria-label="Expand About Us"
-                  aria-expanded = {toggleState.AboutUs}
+                  aria-expanded={toggleState.AboutUs}
                   className={`button cursor-pointer bg-transparent border-0 rounded-none p-0 relative transition-button min-w-[44px] min-h-[44px]`}
                 >
                   <Arrow />
                 </button>
               </div>
-              <div aria-expanded = {toggleState.AboutUs} className="expandible relative expander">
-                <div aria-expanded = {toggleState.AboutUs} className="expandible-list ">
+              <div
+                aria-expanded={toggleState.AboutUs}
+                className="expandible relative expander"
+              >
+                <div
+                  aria-expanded={toggleState.AboutUs}
+                  className="expandible-list"
+                >
                   <ul className="inline-block">
                     <li>
                       <FooterLink
@@ -83,7 +84,9 @@ const Footer = () => {
                     </li>
                     <li>
                       <FooterLink
-                        link={"https://investor.starbucks.com/ir-home/default.aspx"}
+                        link={
+                          "https://investor.starbucks.com/ir-home/default.aspx"
+                        }
                         content={"Investor Relations"}
                       />
                     </li>
@@ -144,16 +147,72 @@ const Footer = () => {
                 className="cursor-pointer flex items-center justify-between mb-[0.8rem] min-[480px]:mb-[1.6rem] py-[0.8rem]"
                 onClick={() => handleToggle("Careers", "switch")}
               >
-                <h2 tabindex="-1" className="text-[1.6rem]">
-                    Careers
+                <h2 tabIndex="-1" className="text-[1.6rem]">
+                  Careers
                 </h2>
                 <button
                   aria-label="Expand Careers"
-                  aria-expanded = {toggleState.Careers}
+                  aria-expanded={toggleState.Careers}
                   className={`button cursor-pointer bg-transparent border-0 rounded-none p-0 relative transition-button min-w-[44px] min-h-[44px]`}
                 >
                   <Arrow />
                 </button>
+              </div>
+              <div
+                aria-expanded={toggleState.Careers}
+                className="expandible relative expander"
+              >
+                <div
+                  aria-expanded={toggleState.Careers}
+                  className="expandible-list"
+                >
+                  <ul className="inline-block">
+                    <li>
+                      <FooterLink
+                        link={
+                          "https://www.starbucks.com/careers/working-at-starbucks/culture-and-values/"
+                        }
+                        content={"Culture and values"}
+                      />
+                    </li>
+                    <li>
+                      <FooterLink
+                        link={
+                          "https://stories.starbucks.com/stories/inclusion-diversity/"
+                        }
+                        content={"Inclusion, Diversity and Equity"}
+                      />
+                    </li>
+                    <li>
+                      <FooterLink
+                        link={
+                          "https://www.starbucks.com/careers/working-at-starbucks/education/"
+                        }
+                        content={"College Achievement Plan"}
+                      />
+                    </li>
+                    <li>
+                      <FooterLink
+                        link={"https://alumni.starbucks.com/login/"}
+                        content={"Alumni Community"}
+                      />
+                    </li>
+                    <li>
+                      <FooterLink
+                        link={"https://www.starbucks.com/careers/"}
+                        content={"U.S. Careers"}
+                      />
+                    </li>
+                    <li>
+                      <FooterLink
+                        link={
+                          "https://www.starbucks.com/careers/international-careers/"
+                        }
+                        content={"International Careers"}
+                      />
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="hidden w-[190px] max-w-[190px] lg:inline-block lg:ml-[3.2rem]">
@@ -210,16 +269,52 @@ const Footer = () => {
                 className="cursor-pointer flex items-center justify-between mb-[0.8rem] min-[480px]:mb-[1.6rem] py-[0.8rem]"
                 onClick={() => handleToggle("SocialImpact", "switch")}
               >
-                <h2 tabindex="-1" className="text-[1.6rem]">
-                    Social Impact
+                <h2 tabIndex="-1" className="text-[1.6rem]">
+                  Social Impact
                 </h2>
                 <button
                   aria-label="Expand Social Impact"
-                  aria-expanded = {toggleState.SocialImpact}
+                  aria-expanded={toggleState.SocialImpact}
                   className={`button cursor-pointer bg-transparent border-0 rounded-none p-0 relative transition-button min-w-[44px] min-h-[44px]`}
                 >
                   <Arrow />
                 </button>
+              </div>
+              <div
+                aria-expanded={toggleState.SocialImpact}
+                className="expandible relative expander"
+              >
+                <div
+                  aria-expanded={toggleState.SocialImpact}
+                  className="expandible-list"
+                >
+                  <ul className="inline-block">
+                    <li>
+                      <FooterLink
+                        link={
+                          "https://www.starbucks.com/responsibility/people/"
+                        }
+                        content={"People"}
+                      />
+                    </li>
+                    <li>
+                      <FooterLink
+                        link={
+                          "https://www.starbucks.com/responsibility/planet/"
+                        }
+                        content={"Planet"}
+                      />
+                    </li>
+                    <li>
+                      <FooterLink
+                        link={
+                          "https://www.starbucks.com/responsibility/reporting-hub/"
+                        }
+                        content={"Environmental and Social Impact Reporting"}
+                      />
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="hidden w-[190px] max-w-[190px] lg:inline-block lg:ml-[3.2rem]">
@@ -252,16 +347,56 @@ const Footer = () => {
                 className="cursor-pointer flex items-center justify-between mb-[0.8rem] min-[480px]:mb-[1.6rem] py-[0.8rem]"
                 onClick={() => handleToggle("ForBusinessPartners", "switch")}
               >
-                <h2 tabindex="-1" className="text-[1.6rem]">
-                    For Business Partners
+                <h2 tabIndex="-1" className="text-[1.6rem]">
+                  For Business Partners
                 </h2>
                 <button
                   aria-label="Expand For Business Partners"
-                  aria-expanded = {toggleState.ForBusinessPartners}
+                  aria-expanded={toggleState.ForBusinessPartners}
                   className={`button cursor-pointer bg-transparent border-0 rounded-none p-0 relative transition-button min-w-[44px] min-h-[44px]`}
                 >
                   <Arrow />
                 </button>
+              </div>
+              <div
+                aria-expanded={toggleState.ForBusinessPartners}
+                className="expandible relative expander"
+              >
+                <div
+                  aria-expanded={toggleState.ForBusinessPartners}
+                  className="expandible-list"
+                >
+                  <ul className="inline-block">
+                    <li>
+                      <FooterLink
+                        link={
+                          "https://www.starbucks.com/business/landlord-faq/"
+                        }
+                        content={"Landlord Support Center"}
+                      />
+                    </li>
+                    <li>
+                      <FooterLink
+                        link={"https://www.starbucks.com/business/suppliers/"}
+                        content={"Suppliers"}
+                      />
+                    </li>
+                    <li>
+                      <FooterLink
+                        link={"https://www.starbuckscardb2b.com/s/"}
+                        content={"Corporate Gift Card Sales"}
+                      />
+                    </li>
+                    <li>
+                      <FooterLink
+                        link={
+                          "https://www.nestlecoffeepartnerssl.com/our-brands/we-proudly-serve-starbucks-coffee-program"
+                        }
+                        content={"Office and Foodservice Coffee"}
+                      />
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="hidden w-[190px] max-w-[190px] lg:inline-block lg:ml-[3.2rem]">
@@ -300,16 +435,62 @@ const Footer = () => {
                 className="cursor-pointer flex items-center justify-between mb-[0.8rem] min-[480px]:mb-[1.6rem] py-[0.8rem]"
                 onClick={() => handleToggle("OrderAndPickup", "switch")}
               >
-                <h2 tabindex="-1" className="text-[1.6rem]">
-                    Order and Pickup
+                <h2 tabIndex="-1" className="text-[1.6rem]">
+                  Order and Pickup
                 </h2>
                 <button
                   aria-label="Expand Order And Pickup"
-                  aria-expanded = {toggleState.OrderAndPickup}
+                  aria-expanded={toggleState.OrderAndPickup}
                   className={`button cursor-pointer bg-transparent border-0 rounded-none p-0 relative transition-button min-w-[44px] min-h-[44px]`}
                 >
                   <Arrow />
                 </button>
+              </div>
+              <div
+                aria-expanded={toggleState.OrderAndPickup}
+                className="expandible relative expander"
+              >
+                <div
+                  aria-expanded={toggleState.OrderAndPickup}
+                  className="expandible-list"
+                >
+                  <ul className="inline-block">
+                    <li>
+                      <FooterLink
+                        link={"https://www.starbucks.com/rewards/mobile-apps/"}
+                        content={"Order on the App"}
+                      />
+                    </li>
+                    <li>
+                      <FooterLink
+                        link={"https://www.starbucks.com/menu"}
+                        content={"Order on the Web"}
+                      />
+                    </li>
+                    <li>
+                      <FooterLink
+                        link={
+                          "https://www.starbucks.com/ways-to-order/delivery/"
+                        }
+                        content={"Delivery"}
+                      />
+                    </li>
+                    <li>
+                      <FooterLink
+                        link={"https://www.starbucks.com/ways-to-order/"}
+                        content={"Order and Pickup Options"}
+                      />
+                    </li>
+                    <li>
+                      <FooterLink
+                        link={
+                          "https://athome.starbucks.com/?utm_source=starbucks.com&utm_medium=referral&utm_campaign=footer"
+                        }
+                        content={"Explore and Find Coffee for Home"}
+                      />
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="hidden w-[190px] max-w-[190px] lg:inline-block lg:ml-[3.2rem]">
@@ -356,7 +537,7 @@ const Footer = () => {
             <li className="items-center lg:flex lg:text-center">
               <a
                 href="https://www.starbucks.com/terms/privacy-policy/"
-                className="block no-underline mb-[0.4rem] py-[0.8rem] lg:mb-0 lg:py-[0] lg:pr-[1.6rem] hover:underline"
+                className="block no-underline text-[] mb-[0.4rem] py-[0.8rem] lg:mb-0 lg:py-[0] lg:pr-[1.6rem] hover:underline"
               >
                 Privacy Notice
               </a>
