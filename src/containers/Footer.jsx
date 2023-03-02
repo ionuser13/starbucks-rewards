@@ -41,7 +41,7 @@ const Footer = () => {
             <div className="w-full lg:hidden">
               <div
                 onClick={() => handleToggle("AboutUs", "switch")}
-                className="clickable cursor-pointer flex items-center justify-between mb-[0.8rem] min-[480px]:mb-[1.6rem] py-[0.8rem]"
+                className="cursor-pointer flex items-center justify-between mb-[0.8rem] min-[480px]:mb-[1.6rem] py-[0.8rem]"
               >
                 <h2 tabindex="-1" className="text-[1.6rem]">
                   About Us
@@ -54,7 +54,50 @@ const Footer = () => {
                   <Arrow />
                 </button>
               </div>
+              <div aria-expanded = {toggleState.AboutUs} className="expandible relative expander">
+                <div aria-expanded = {toggleState.AboutUs} className="expandible-list ">
+                  <ul className="inline-block">
+                    <li>
+                      <FooterLink
+                        link={"https://www.starbucks.com/about-us/"}
+                        content={"Our Company"}
+                      />
+                    </li>
+                    <li>
+                      <FooterLink
+                        link={"https://www.starbucks.com/coffee/"}
+                        content={"Our Coffee"}
+                      />
+                    </li>
+                    <li>
+                      <FooterLink
+                        link={"https://stories.starbucks.com/"}
+                        content={"Stories and News"}
+                      />
+                    </li>
+                    <li>
+                      <FooterLink
+                        link={"https://archive.starbucks.com/"}
+                        content={"Starbucks Archive"}
+                      />
+                    </li>
+                    <li>
+                      <FooterLink
+                        link={"https://investor.starbucks.com/ir-home/default.aspx"}
+                        content={"Investor Relations"}
+                      />
+                    </li>
+                    <li>
+                      <FooterLink
+                        link={"https://customerservice.starbucks.com/"}
+                        content={"Customer Service"}
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
+            {/* separation */}
             <div className="hidden w-[190px] max-w-[190px] lg:inline-block">
               <FooterTitle title={"About Us"} />
               <ul className="inline-block">
@@ -98,7 +141,7 @@ const Footer = () => {
             </div>
             <div className="w-full lg:hidden">
               <div
-                className="clickable cursor-pointer flex items-center justify-between mb-[0.8rem] min-[480px]:mb-[1.6rem] py-[0.8rem]"
+                className="cursor-pointer flex items-center justify-between mb-[0.8rem] min-[480px]:mb-[1.6rem] py-[0.8rem]"
                 onClick={() => handleToggle("Careers", "switch")}
               >
                 <h2 tabindex="-1" className="text-[1.6rem]">
@@ -164,7 +207,7 @@ const Footer = () => {
             </div>
             <div className="w-full lg:hidden">
               <div
-                className="clickable cursor-pointer flex items-center justify-between mb-[0.8rem] min-[480px]:mb-[1.6rem] py-[0.8rem]"
+                className="cursor-pointer flex items-center justify-between mb-[0.8rem] min-[480px]:mb-[1.6rem] py-[0.8rem]"
                 onClick={() => handleToggle("SocialImpact", "switch")}
               >
                 <h2 tabindex="-1" className="text-[1.6rem]">
@@ -206,7 +249,7 @@ const Footer = () => {
             </div>
             <div className="w-full lg:hidden">
               <div
-                className="clickable cursor-pointer flex items-center justify-between mb-[0.8rem] min-[480px]:mb-[1.6rem] py-[0.8rem]"
+                className="cursor-pointer flex items-center justify-between mb-[0.8rem] min-[480px]:mb-[1.6rem] py-[0.8rem]"
                 onClick={() => handleToggle("ForBusinessPartners", "switch")}
               >
                 <h2 tabindex="-1" className="text-[1.6rem]">
@@ -254,7 +297,7 @@ const Footer = () => {
             </div>
             <div className="w-full lg:hidden">
               <div
-                className="clickable cursor-pointer flex items-center justify-between mb-[0.8rem] min-[480px]:mb-[1.6rem] py-[0.8rem]"
+                className="cursor-pointer flex items-center justify-between mb-[0.8rem] min-[480px]:mb-[1.6rem] py-[0.8rem]"
                 onClick={() => handleToggle("OrderAndPickup", "switch")}
               >
                 <h2 tabindex="-1" className="text-[1.6rem]">
