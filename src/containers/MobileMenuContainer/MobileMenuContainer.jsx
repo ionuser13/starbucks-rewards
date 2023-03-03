@@ -6,9 +6,9 @@ import SignButton from '../../components/Header/SignButton';
 
 const MobileMenuContainer = () => {
     return (
-        <div>
+        <div className='absolute bg-white'>
             <MenuOptionsMobile />
-            <hr aria-hidden="true" className="my-[3.2rem]"></hr>
+            <hr aria-hidden="true" className="my-[3.2rem]" />
             <div className='flex'>
                 <SignButton />
                 <JoinButton />

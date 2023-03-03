@@ -4,11 +4,11 @@ import Arrow from "../../Assets/Icons/Arrow"
 const MenuOptionsMobile = () => {
     return (
         <div className='shrink-0'>
-            <ul className='flex gap-x-[2.4rem] tracking-widest uppercase font-bold py-[4rem] text-sm'>
+            <ul className='tracking-widest uppercase font-bold py-[4rem] text-sm'>
                 <li>
                     <div href="/" className='flex'>
                         <span>Menu</span>
-                        <div className='rotate-180'>
+                        <div className=''>
                             <Arrow />
                         </div>
                     </div>

@@ -5,6 +5,7 @@ import FindStore from '../components/Header/FindStore';
 import SignButton from '../components/Header/SignButton';
 import JoinButton from '../components/Header/JoinButton';
 import "../styles/upperHeader.css";
+import MobileMenuContainer from './MobileMenuContainer/MobileMenuContainer';
 
 const Header = () => {
     return (
@@ -26,6 +27,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+            <MobileMenuContainer />
         </header>
     )
 }
