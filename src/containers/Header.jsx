@@ -6,16 +6,21 @@ import SignButton from '../components/Header/SignButton';
 import JoinButton from '../components/Header/JoinButton';
 import "../styles/upperHeader.css";
 import MobileMenuContainer from './MobileMenuContainer/MobileMenuContainer';
+// import BurgerMenu from '../components/Header/BurgerMenu';
 
 const Header = () => {
     return (
-        <header className='z-[2] upperHeader'>
+        <header className='z-[2] upperHeader relative'>
             <div className='px-[1.6rem] md:px-[2.4rem] lg:px-[4rem] min-[1520px]:mx-[auto] min-[1520px]:max-w-[1440px] min-[1520px]:px-[0] min-[1520px]:relative'>
                 <div className='flex items-center'>
-                    <div className="mr-[1.6rem] my-[1.6rem] md:my-0 md:mr-[2.4rem] lg:mr-[4rem] w-[32px] h-[32px] min-[375px]:w-[40px] min-[375px]:h-[40px] md:w-[51px] md:h-[51px] min-[1702px]:absolute min-[1702px]:right-[100%] min-[1702px]:top-[50%] min-[1702px]:translate-y-[-50%]">
-                        <StarLogo />
+                    <div>
+                        <div className="mr-[1.6rem] my-[1.6rem] md:my-0 md:mr-[2.4rem] lg:mr-[4rem] w-[32px] h-[32px] min-[375px]:w-[40px] min-[375px]:h-[40px] md:w-[51px] md:h-[51px] min-[1702px]:absolute min-[1702px]:right-[100%] min-[1702px]:top-[50%] min-[1702px]:translate-y-[-50%]">
+                            <a href="/" className='block'>
+                                <StarLogo />
+                            </a>
+                        </div>
                     </div>
-                    <div className='hidden md:flex md:items-center grow'>
+                    <div className='hidden lg:flex lg:items-center grow'>
                         <MenuOptions />
                         <div className='rightPart flex items-center ml-auto gap-x-[4.8rem] shrink-0 text-[1.4rem]'>
                             <FindStore />
@@ -27,7 +32,10 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <MobileMenuContainer />
+            <div></div>
+            <div>
+                <MobileMenuContainer />
+            </div>
         </header>
     )
 }
