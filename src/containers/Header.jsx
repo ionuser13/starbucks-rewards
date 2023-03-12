@@ -56,7 +56,7 @@ const Header = () => {
           nav
             ? `md:hidden bg-black/[.38] fixed left-0 w-full h-[calc(100%-64px)] top-[64px] min-[375px]:h-[calc(100%-72px)] min-[375px]:top-[72px] md:h-[calc(100%-83px)] md:top-[83px] ease-in duration-300`
             : "bg-transparent ease-in duration-300"
-        }
+        } onClick={() => {handleNav(); setOpen()}}
       >
         <div
           className={
