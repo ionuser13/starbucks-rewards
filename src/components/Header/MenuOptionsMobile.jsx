@@ -6,7 +6,7 @@ const MenuOptionsMobile = () => {
         <div className='shrink-0'>
             <ul className='tracking-widest'>
                 <li>
-                    <button className='py-[1.6rem] px-[3.2rem] text-[1.9rem] decoration-none flex flex flex-row-reverse justify-between w-full md:text-[2.4rem]'>
+                    <button className='py-[1.6rem] px-[3.2rem] text-[1.9rem] decoration-none flex flex-row-reverse justify-between w-full md:text-[2.4rem]'>
                         <div className='relative w-[24px] h-[24px] rotate-[270deg]'>
                             <Arrow />
                         </div>
