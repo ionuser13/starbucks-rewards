@@ -13,12 +13,12 @@ const FavoritesContainer = () => {
     const [selectedButton, setSelectedButton] = useState(products[0].points);
     let selectedProduct = products.find((product)=>product.points === selectedButton)
     return (
-        <div className='mb-[72px] md:mb-[128px]'>
+        <div className='mb-[72px] md:mb-[128px] z-[-1]'>
             <div className='text-center bg-light-green-op px-0 pt-[4.8rem]'>
                 <div className='px-[1.6rem]'>
                     <FavTitle />
                 </div>
-                <div>
+                <div className='relative z-0'>
                     <div className='buttons flex justify-around mx-auto relative w-full md:max-w-[540px]'>
                         {products.map((product) => (
                             <button key={product.points} className={`bg-transparent items-center grow pt-[0.8rem] pb-[1.6rem] px-[0.8rem] relative w-full ${selectedButton === product.points ? 'border-b-4 border-green' : ''}`} role={"tab"} tabIndex="-1" onClick={() => setSelectedButton(product.points)}>
