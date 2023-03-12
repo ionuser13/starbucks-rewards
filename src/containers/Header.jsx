@@ -7,6 +7,7 @@ import JoinButton from "../components/Header/JoinButton";
 import MobileMenuContainer from "./MobileMenuContainer/MobileMenuContainer";
 import { Divide as Hamburger } from "hamburger-react";
 import "../styles/upperHeader.css";
+import MenuInsideOptionsContainer from "./MobileMenuContainer/MenuInsideOptionsContainer";
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
@@ -56,7 +57,7 @@ const Header = () => {
           nav
             ? `md:hidden bg-black/[.38] fixed left-0 w-full h-[calc(100%-64px)] top-[64px] min-[375px]:h-[calc(100%-72px)] min-[375px]:top-[72px] md:h-[calc(100%-83px)] md:top-[83px] ease-in duration-300`
             : "bg-transparent ease-in duration-300"
-        } onClick={() => {handleNav(); setOpen()}}
+        }
       >
         <div
           className={
@@ -70,6 +71,9 @@ const Header = () => {
           }}
         >
           <MobileMenuContainer />
+          <div className="bg-[#fff] block w-[80vw] right-0 fixed overflow-auto left-[20vw] top-[64px] h-[calc(100%-64px)] min-[375px]:h-[calc(100%-72px)] min-[375px]:top-[72px] md:h-[calc(100%-83px)] bottom-auto" style={{boxShadow: "inset 0 4px 3px -3px rgba(0,0,0,.1), inset 0 4px 2px -2px rgba(0,0,0,.07)"}}>
+            <MenuInsideOptionsContainer />
+          </div>
         </div>
       </div>
     </header>
