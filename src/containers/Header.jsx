@@ -92,7 +92,7 @@ const Header = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="/" className='text-left block py-[1.6rem] px-[3.2rem] w-full text-[1.9rem] decoration-none md:text-[2.4rem]'>
+                        <a href="https://www.starbucks.com/gift" className='text-left block py-[1.6rem] px-[3.2rem] w-full text-[1.9rem] decoration-none md:text-[2.4rem]'>
                             Gift Cards
                         </a>
                     </li>
