@@ -55,7 +55,6 @@ const Footer = () => {
               >
                 <div
                   aria-expanded={toggleState.AboutUs}
-                  className="expandible-list"
                 >
                   <ul className="inline-block">
                     <li>
@@ -164,7 +163,6 @@ const Footer = () => {
               >
                 <div
                   aria-expanded={toggleState.Careers}
-                  className="expandible-list"
                 >
                   <ul className="inline-block">
                     <li>
@@ -286,7 +284,6 @@ const Footer = () => {
               >
                 <div
                   aria-expanded={toggleState.SocialImpact}
-                  className="expandible-list"
                 >
                   <ul className="inline-block">
                     <li>
@@ -364,7 +361,6 @@ const Footer = () => {
               >
                 <div
                   aria-expanded={toggleState.ForBusinessPartners}
-                  className="expandible-list"
                 >
                   <ul className="inline-block">
                     <li>
@@ -452,7 +448,6 @@ const Footer = () => {
               >
                 <div
                   aria-expanded={toggleState.OrderAndPickup}
-                  className="expandible-list"
                 >
                   <ul className="inline-block">
                     <li>

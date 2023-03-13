@@ -39,26 +39,10 @@ code {
 .expandible {
   overflow: hidden;
   max-height: 0px;
-}
-.expander {
   transition: max-height .3s cubic-bezier(.25, .46, .45, .94);
 }
-.expander[aria-expanded="true"] {
+.expandible[aria-expanded="true"] {
   max-height: 300px;
-}
-.expandible-list {
-  display: none;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-}
-.expandible-list[aria-expanded="true"] {
-  display: block;
-  position: initial;
-  bottom: initial;
-  left: initial;
-  right: initial;
 }
 .transition-button {
   transition: all .2s ease-out;
