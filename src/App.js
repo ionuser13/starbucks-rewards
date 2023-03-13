@@ -6,7 +6,8 @@ import StartedSection from './containers/StartedContainer/StartedSection';
 import CashContainer from './containers/CashContainer/CashContainer';
 import QuestionContainer from './containers/QuestionsContainer/QuestionContainer';
 import StarTermsContainer from './containers/StarTermsContainer/StarTermsContainer';
-import Footer from "./containers/Footer.jsx"
+import Footer from "./containers/Footer";
+import StarCodesContainer from "../src/containers/StarCodesContainer/StarCodesContainer"
 import MainMobile from './containers/JoinContainer/MainMobile';
 import FavoritesContainer from './containers/FavoritesContainer/FavoritesContainer';
 import './App.css';
@@ -27,6 +28,7 @@ function App() {
         <FavoritesContainer />
         <ExtrasContainer />
         <CashContainer />
+        <StarCodesContainer />
         <QuestionContainer />
         <StarTermsContainer />
         <Footer />
