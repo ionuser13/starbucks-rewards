@@ -4,17 +4,22 @@ import MenuOptions from "../components/Header/MenuOptions";
 import FindStore from "../components/Header/FindStore";
 import SignButton from "../components/Header/SignButton";
 import JoinButton from "../components/Header/JoinButton";
-import MobileMenuContainer from "./MobileMenuContainer/MobileMenuContainer";
+import Arrow from "../Assets/Icons/Arrow";
+import MenuItem from '../components/Header/MenuItem';
 import { Divide as Hamburger } from "hamburger-react";
 import "../styles/upperHeader.css";
-import MenuInsideOptionsContainer from "./MobileMenuContainer/MenuInsideOptionsContainer";
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
   const [nav, setNav] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
   const handleNav = () => {
     setNav(!nav);
   };
+  const handleMenu = () => {
+    setOpenMenu(!openMenu)
+  }
+
   return (
     <header className="z-[2] upperHeader relative">
       <div className="px-[1.6rem] md:px-[2.4rem] lg:px-[4rem] min-[1520px]:mx-[auto] min-[1520px]:max-w-[1440px] min-[1520px]:px-[0] min-[1520px]:relative">
@@ -38,7 +43,7 @@ const Header = () => {
           </div>
           <div
             className="absolute bottom-0 top-0 right-0 w-[44px] mx-[1.6rem] md:mx-[2.4rem] md:hidden"
-            onClick={handleNav}
+            onClick={()=>{handleNav(); setOpenMenu(false)}}
           >
             <span className="absolute top-[50%] translate-y-[-50%] right-[10%]">
               <Hamburger
@@ -70,9 +75,63 @@ const Header = () => {
               "inset 0 4px 3px -3px rgb(0 0 0 / 10%), inset 0 4px 2px -2px rgb(0 0 0 / 7%)",
           }}
         >
-          <MobileMenuContainer />
-          <div className="bg-[#fff] block w-[80vw] right-0 fixed overflow-auto left-[20vw] top-[64px] h-[calc(100%-64px)] min-[375px]:h-[calc(100%-72px)] min-[375px]:top-[72px] md:h-[calc(100%-83px)] bottom-auto" style={{boxShadow: "inset 0 4px 3px -3px rgba(0,0,0,.1), inset 0 4px 2px -2px rgba(0,0,0,.07)"}}>
-            <MenuInsideOptionsContainer />
+          <div>
+              <div className='shrink-0'>
+                <ul className='tracking-widest'>
+                    <li onClick={handleMenu}>
+                        <button className='py-[1.6rem] px-[3.2rem] text-[1.9rem] decoration-none flex flex-row-reverse justify-between w-full md:text-[2.4rem]'>
+                            <div className='relative w-[24px] h-[24px] rotate-[270deg]'>
+                                <Arrow />
+                            </div>
+                            <span>Menu</span>
+                        </button>
+                    </li>
+                    <li>
+                        <a href="/" className='text-left block py-[1.6rem] px-[3.2rem] w-full text-[1.9rem] decoration-none md:text-[2.4rem]'>
+                            Rewards
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" className='text-left block py-[1.6rem] px-[3.2rem] w-full text-[1.9rem] decoration-none md:text-[2.4rem]'>
+                            Gift Cards
+                        </a>
+                    </li>
+                </ul>
+              </div>
+            <hr aria-hidden="true" className="mt-[1.6rem] mb-[3.2rem] mx-[3.2rem]" />
+            <div className='inline-block px-[2.4rem]'>
+                <div className='ml-auto text-[1.4rem] shrink-0'>
+                    <SignButton innerText={"Sign In"} />
+                    <JoinButton innerText={"Join now"} />    
+                    <div className='block text-center pr-[0.8rem] mt-[1.6rem]'>
+                        <FindStore />
+                    </div>
+                </div>
+            </div>
+        </div>
+          <div className={openMenu ? "bg-[#fff] block w-[80vw] right-0 fixed overflow-auto left-[20vw] top-[64px] h-[calc(100%-64px)] min-[375px]:h-[calc(100%-72px)] min-[375px]:top-[72px] md:h-[calc(100%-83px)] bottom-auto ease-out duration-300" : "bg-[#fff] block w-[80vw] right-[-100%] fixed overflow-auto left-[100%] top-[64px] h-[calc(100%-64px)] min-[375px]:h-[calc(100%-72px)] min-[375px]:top-[72px] md:h-[calc(100%-83px)] bottom-auto ease-out duration-300"} style={{boxShadow: "inset 0 4px 3px -3px rgba(0,0,0,.1), inset 0 4px 2px -2px rgba(0,0,0,.07)"}}>
+          <ul className='absolute top-0 left-0 w-full block'>
+            <li onClick={handleMenu}>
+                <button className='relative text-center bg-[#f9f9f9] py-[1.6rem] px-[3.2rem] w-full block text-[1.9rem] no-underline' style={{boxShadow: "inset 0 4px 5px -3px rgba(0,0,0,.2);"}}>
+                    <div className='absolute left-[24px] top-[16px] h-[24px] w-[24px] align-middle rotate-90'>
+                        <Arrow />
+                    </div>
+                    <span>Menu</span>
+                </button>
+            </li>
+            <li>
+                <MenuItem link={"https://www.starbucks.com/menu"} innerText={"All products"}/>
+            </li>
+            <li>
+                <MenuItem link={"https://www.starbucks.com/menu/featured/"} innerText={"Featured"}/>
+            </li>
+            <li>
+                <MenuItem link={"https://www.starbucks.com/menu/previous"} innerText={"Previous"}/>
+            </li>
+            <li>
+                <MenuItem link={"https://www.starbucks.com/menu/favorites"} innerText={"Favorites"}/>
+            </li>
+          </ul>
           </div>
         </div>
       </div>
