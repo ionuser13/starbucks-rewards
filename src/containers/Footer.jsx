@@ -51,7 +51,7 @@ const Footer = () => {
               </div>
               <div
                 aria-expanded={toggleState.AboutUs}
-                className="expandible relative expander"
+                className="expandible relative"
               >
                 <div
                   aria-expanded={toggleState.AboutUs}
@@ -159,7 +159,7 @@ const Footer = () => {
               </div>
               <div
                 aria-expanded={toggleState.Careers}
-                className="expandible relative expander"
+                className="expandible relative"
               >
                 <div
                   aria-expanded={toggleState.Careers}
@@ -280,7 +280,7 @@ const Footer = () => {
               </div>
               <div
                 aria-expanded={toggleState.SocialImpact}
-                className="expandible relative expander"
+                className="expandible relative"
               >
                 <div
                   aria-expanded={toggleState.SocialImpact}
@@ -357,7 +357,7 @@ const Footer = () => {
               </div>
               <div
                 aria-expanded={toggleState.ForBusinessPartners}
-                className="expandible relative expander"
+                className="expandible relative"
               >
                 <div
                   aria-expanded={toggleState.ForBusinessPartners}
@@ -444,7 +444,7 @@ const Footer = () => {
               </div>
               <div
                 aria-expanded={toggleState.OrderAndPickup}
-                className="expandible relative expander"
+                className="expandible relative"
               >
                 <div
                   aria-expanded={toggleState.OrderAndPickup}
