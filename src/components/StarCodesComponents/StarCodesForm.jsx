@@ -23,7 +23,7 @@ const StarCodesForm = () => {
     inputValue.length === 0 ? "border-gray-400" : isFocused ? "border-green-400" : isFocused && inputValue.length > 0 ? "border-green-400" :"border-red-400"
   }`;
 
-  const labelClasses = `${isFocused ? "top-[-28%] text-[1.4rem] md:text-[1.4rem]" : inputValue.length > 0 ? "top-[-28%] text-[1.4rem] md:text-[1.4rem]" : "top-[15%] text-[1.6rem] md:text-[1.9rem]"  }`
+  const labelClasses = `${isFocused ? "top-[-28%] text-[1.4rem] md:text-[1.4rem]" : inputValue.length > 0 ? "top-[-28%] text-[1.4rem] md:text-[1.4rem]" : "top-[20%] text-[1.6rem] md:text-[1.9rem]"  }`
 
   const warningClasses = `${inputValue.length === 0 && !isFocused ? "max-h-0" : isFocused && inputValue.length === 0 ? "max-h-[300px]" : !isFocused ? "max-h-[300px]" : "max-h-0"}`;
 
