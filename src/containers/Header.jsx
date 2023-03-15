@@ -15,6 +15,7 @@ const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const handleNav = () => {
     setNav(!nav);
+    document.body.style.overflowY = nav ? "auto" : "hidden";
   };
   const handleMenu = () => {
     setOpenMenu(!openMenu)
