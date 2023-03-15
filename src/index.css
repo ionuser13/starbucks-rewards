@@ -29,8 +29,6 @@ code {
 }
 
 .expandible {
-  overflow: hidden;
-  max-height: 0px;
   transition: max-height .3s cubic-bezier(.25, .46, .45, .94);
 }
 .expandible[aria-expanded="true"] {
