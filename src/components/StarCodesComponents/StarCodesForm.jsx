@@ -63,7 +63,7 @@ const StarCodesForm = () => {
       </div>
       <div className="pr-[1.6rem]">
         <div>
-          <div className={`overflow-hidden expandible relative ${warningClasses}`}>
+          <div className={`overflow-hidden relative ${warningClasses}`} style={{transition: "max-height .3s cubic-bezier(.25, .46, .45, .94)",}} >
             <span className="block pt-[0.4rem]">
               <span className="flex relative text-[1.3rem] md:text-[1.4rem]">
                 {/* <span className="block w-full h-full absolute bg-white">hola</span> */}
