@@ -133,7 +133,7 @@ const Header = () => {
               <li onClick={handleMenu}>
                 <button
                   className="relative text-center bg-[#f9f9f9] py-[1.6rem] px-[3.2rem] w-full block text-[1.9rem] no-underline"
-                  style={{ boxShadow: "inset 0 4px 5px -3px rgba(0,0,0,.2);" }}
+                  style={{ boxShadow: "inset 0 4px 5px -3px rgba(0,0,0,.2)" }}
                 >
                   <div className="absolute left-[24px] top-[16px] h-[24px] w-[24px] align-middle rotate-90">
                     <Arrow />
